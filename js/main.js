@@ -2,7 +2,7 @@ function calculateNumber() {
     const r = Math.random();
     let N = 1;
 
-    while( !(Math.pow(2, -N + 1) > r && r > Math.pow(2, -N)) )
+    while( !(Math.pow(2, -N + 1) > r && r >= Math.pow(2, -N)) )
         N++;
     
     return N;
